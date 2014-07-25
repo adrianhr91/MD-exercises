@@ -1,0 +1,11 @@
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\MoneyDashboardExercises\Tests\bin\Debug\Tests.dll
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\MoneyDashboardExercises\Tests\bin\Debug\Tests.pdb
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\MoneyDashboardExercises\Tests\bin\Debug\2.IncorrectBalanceIssue.exe
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\MoneyDashboardExercises\Tests\bin\Debug\3.RecurringTransactions.exe
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\MoneyDashboardExercises\Tests\bin\Debug\2.IncorrectBalanceIssue.pdb
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\MoneyDashboardExercises\Tests\bin\Debug\3.RecurringTransactions.pdb
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\MoneyDashboardExercises\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\MoneyDashboardExercises\Tests\obj\Debug\Tests.dll
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\MoneyDashboardExercises\Tests\obj\Debug\Tests.pdb
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\MoneyDashboardExercises\Tests\bin\Debug\5.90DaysGraph.pdb
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\MoneyDashboardExercises\Tests\bin\Debug\5.90DaysGraph.dll

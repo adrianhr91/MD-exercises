@@ -1,0 +1,8 @@
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\MoneyDashboardExercises\5.90DaysGraph\obj\Debug\5.90DaysGraph.csprojResolveAssemblyReference.cache
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\MoneyDashboardExercises\5.90DaysGraph\bin\Debug\5.90DaysGraph.pdb
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\MoneyDashboardExercises\5.90DaysGraph\bin\Debug\3.RecurringTransactions.exe
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\MoneyDashboardExercises\5.90DaysGraph\bin\Debug\3.RecurringTransactions.pdb
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\MoneyDashboardExercises\5.90DaysGraph\obj\Debug\5.90DaysGraph.pdb
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\MoneyDashboardExercises\5.90DaysGraph\bin\Debug\5.90DaysGraph.dll.config
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\MoneyDashboardExercises\5.90DaysGraph\bin\Debug\5.90DaysGraph.dll
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\MoneyDashboardExercises\5.90DaysGraph\obj\Debug\5.90DaysGraph.dll
