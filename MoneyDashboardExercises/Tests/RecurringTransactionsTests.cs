@@ -43,6 +43,23 @@ namespace Tests
             // Assert
             Assert.AreEqual(1, reccuring.Count);
         }
+
+        [TestMethod]
+        public void NonConsecutiveButMatching_Test()
+        {
+            // Arrange
+            tran1.TransactionDate = DateTime.Now;
+            tran2.TransactionDate = DateTime.Now.AddMonths(-1);
+            tran3.TransactionDate = DateTime.Now.AddMonths(-3);
+            AddDescriptionToTransactions();
+            TransactionManager manager = new TransactionManager();
+
+            // Act
+            var reccuring = manager.GetRecurringTransaction(transactions);
+
+            // Assert
+            Assert.AreEqual(0, reccuring.Count);
+        }
   
         [TestMethod]
         public void OneRecurring2InLatestMonth_Test()

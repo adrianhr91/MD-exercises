@@ -30,8 +30,10 @@ namespace _3.RecurringTransactions
             foreach (Transaction transaction in latestMonthUniqueTransactions)
             {
                 int recurringCount = otherMonthTransactions.Count(other => other.IsMatching(transaction));
+                bool areConsecutive = AreTransactionsInConsecutiveMonths(transaction, otherMonthTransactions);
 
-                if (recurringCount >= RECURRING_TRANSACTION_NUMBER)
+                if (recurringCount >= RECURRING_TRANSACTION_NUMBER &&
+                    areConsecutive == true)
                 {
                     recurringTransactions.Add(transaction);
                 }
@@ -42,6 +44,45 @@ namespace _3.RecurringTransactions
             }
 
             return recurringTransactions;
+        }
+
+        private bool AreTransactionsInConsecutiveMonths(Transaction latestTran, List<Transaction> otherMonthsTransactions)
+        {
+            bool areConsecutive = true;
+
+            var matching = otherMonthsTransactions
+                .Where(other => other.IsMatching(latestTran))
+                .ToList();
+
+            if (matching != null)
+            {
+                matching.
+                    OrderBy(tr => tr.TransactionDate.Month);
+
+                int tranIndex = 0;
+                for (int months = 1; months <= RECURRING_TRANSACTION_NUMBER; months++, tranIndex++)
+                {
+                    Transaction matchingTran = matching[tranIndex];
+
+                    var matchingTranMonth = matchingTran.TransactionDate.Month;
+                    // gets 1 month earlier than latest transaction
+                    // with each iteration. If the matching transaction has the same month
+                    // they are consecutive
+                    var latestTranMonth = latestTran.TransactionDate.AddMonths(-months).Month;
+
+                    if (matchingTranMonth != latestTranMonth)
+                    {
+                        areConsecutive = false;
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                areConsecutive = false;
+            }
+
+            return areConsecutive;
         }
 
         private List<Transaction> RemoveMatching(List<Transaction> transactions)
